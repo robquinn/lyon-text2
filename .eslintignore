@@ -1,0 +1,13 @@
+/dist
+/node_modules
+.eslintrc.js
+.prettierrc.js
+webpack.config.js
+babel.config.js
+jest.config.js
+test/.eslintrc.js
+src/server/.eslintrc.js
+src/client/.eslintrc.js
+dev/.eslintrc.js
+postcss.config.js
+tailwind.config.js

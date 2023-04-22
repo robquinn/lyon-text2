@@ -1,0 +1,10 @@
+/* needed to make consistent test snapshots across OSs */
+body {
+  font-family: Arial !important;
+}
+
+::selection,
+*::selection {
+  background-color: '#0d223f';
+  color: '#ffffff';
+}

@@ -1,0 +1,16 @@
+{
+  "compilerOptions": {
+    "types": ["node", "google-apps-script", "lodash"],
+    "jsx": "react",
+    "lib": ["ES2021.String", "DOM"],
+    "strictNullChecks": true,
+    "target": "ES2016",
+    "moduleResolution": "node",
+    "resolveJsonModule": true,
+    "module": "CommonJS",
+    "esModuleInterop": true,
+    "typeRoots": ["node_modules/@types", "types"]
+  },
+  "include": ["src/**/*", "types/**/*", "dev/**/*", "test/**/*"],
+  "exclude": ["node_modules"]
+}

@@ -1,0 +1,14 @@
+#!/usr/bin/env sh
+. "$(dirname -- "$0")/_/husky.sh"
+
+# fix lint-staged output
+exec >/dev/tty 2>&1
+# lint-staged
+npm run lint-staged
+# reset .clasp.json
+npm run shell:clasp:reset
+# produce new .example.env
+npm run shell:env:example
+git add .env.example
+# sort package json
+npm run sort

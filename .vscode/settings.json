@@ -1,0 +1,26 @@
+{
+  "editor.codeActionsOnSave": {
+    "source.fixAll": true
+  },
+  "eslint.validate": [
+    "javascript",
+    "typescript",
+    "javascriptreact",
+    "html",
+    "typescriptreact"
+  ],
+  "eslint.workingDirectories": ["."],
+  "prettier.configPath": ".prettierrc.js",
+  "editor.defaultFormatter": "esbenp.prettier-vscode",
+  "eslint.nodePath": "C:\\Program Files\\nodejs\\node.exe",
+  "json.schemas": [
+    {
+      "fileMatch": ["appsscript.json"],
+      "url": "http://json.schemastore.org/appsscript"
+    },
+    {
+      "fileMatch": [".clasp.json"],
+      "url": "http://json.schemastore.org/clasp"
+    }
+  ]
+}
