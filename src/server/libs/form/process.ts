@@ -11,23 +11,26 @@ export const processResponse: ProcessForm.ProcessResponse = (
   const batchId = nanoid();
   for (let i = 0; i < twilioSmsRequests.length; i++) {
     const { request, user } = twilioSmsRequests[i];
-    const response = UrlFetchApp.fetch(request.url, request.options);
+    const requestResponse = UrlFetchApp.fetch(request.url, request.options);
     const twilioResponse = JSON.parse(
-      response.getContentText()
+      requestResponse.getContentText()
     ) as FormatUtils.Twilio.RequestResponse;
-    responses.push({
+
+    const response = {
       id: batchId,
       response: twilioResponse,
       user,
-    });
-  }
+    };
 
-  SheetWriter.getRecordObjects(responses)
-    .then((data) => {
-      const sheetWriter = new SheetWriter(Google.Sheets.Sent);
-      return sheetWriter.appendData(data);
-    })
-    .catch((err) => console.log(err.message));
+    SheetWriter.getRecordObjects([response])
+      .then((data) => {
+        const sheetWriter = new SheetWriter(Google.Sheets.Sent);
+        return sheetWriter.appendData(data);
+      })
+      .catch((err) => console.log(err.message));
+
+    responses.push(response);
+  }
 
   return responses;
 };
