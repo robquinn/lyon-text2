@@ -10,8 +10,7 @@
     "sheets",
     "text",
     "sms",
-    "lyon",
-    "text"
+    "lyon"
   ],
   "repository": {
     "type": "git",

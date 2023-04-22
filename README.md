@@ -1,11 +1,11 @@
 # Lyon Text 2
 
-  <div style="display: flex; justify-content: center; align-items: center">
+  <p style="text-align:center">
   <a href="" rel="noopener">
- <img width="200" src="docs/images/rlsir-logo-blue.png" alt="React & Google Apps Script logos"></a>
+ <img align="center" width="200" src="docs/images/rlsir-logo-blue.png" alt="React & Google Apps Script logos"></a>
   <a href="" rel="noopener">
- <img width="200" src="docs/images/react-google-apps-script.png" alt="React & Google Apps Script logos"></a>
- </div>
+ <img align="center" width="200" src="docs/images/react-google-apps-script.png" alt="React & Google Apps Script logos"></a>
+ </p>
 
 ## Table of Contents
 
