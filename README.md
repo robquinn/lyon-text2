@@ -1,6 +1,6 @@
 # Lyon Text 2
 
-  <p style="text-align:center">
+  <p align="center">
   <a href="" rel="noopener">
  <img align="center" width="200" src="docs/images/rlsir-logo-blue.png" alt="React & Google Apps Script logos"></a>
   <a href="" rel="noopener">
