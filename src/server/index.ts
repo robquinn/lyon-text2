@@ -1,3 +1,7 @@
+/**
+ * @OnlyCurrentDoc
+ */
+
 import getOffices from './libs/wrapper/offices';
 import getRoles from './libs/wrapper/roles';
 import getNinjas from './libs/wrapper/ninjas';

@@ -380,7 +380,7 @@ const serverConfig = {
             beautify: true,
             // support custom function autocompletion
             // https://developers.google.com/apps-script/guides/sheets/functions
-            comments: /@customfunction/,
+            comments: /@customfunction|@OnlyCurrentDoc/,
           },
         },
       }),
